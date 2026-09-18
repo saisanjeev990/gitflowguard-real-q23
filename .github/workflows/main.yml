@@ -1,0 +1,12 @@
+name: Q23 CI Test
+
+on:
+  push:
+    branches: [feature/q23-test]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CI fixed"
